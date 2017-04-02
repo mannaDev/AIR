@@ -1,0 +1,174 @@
+body{
+    background: #FFFFCC;
+}
+
+header{
+    overflow: hidden;
+}
+
+#topHeaderSection{
+    background: #E79800;
+    color: #FFF;    
+    padding:10px 7%;
+}
+#topHeaderSection div:nth-child(1) div:nth-child(1){
+    background: url('../assets/images/iconoMail.png');
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+}
+#topHeaderSection div:nth-child(1) div:nth-child(2){
+    height: 25px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+#topHeaderSection ul{
+    height: 25px;
+    line-height: 25px;
+}
+#topHeaderSection ul li{
+    float: left;
+    margin-left: 25px;
+}
+#topHeaderSection ul li:nth-child(4) div:nth-child(1){
+    background: url('../assets/images/profile.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 20px;
+    height: 19px;
+    margin: 3px 7px 0 0;
+}
+
+#bottomHeaderSection nav{
+    margin: 50px 80px 0 0;
+    font-family: navFont;
+}
+#bottomHeaderSection>nav>ul>li{
+    float: left;
+    padding: 5px 5px;
+    margin: 0 10px;
+    transition: background 1s;
+    transition: color 0.3s;
+}
+#bottomHeaderSection nav ul li:hover{
+    background: #E79800;
+    color: #FFF;
+}
+#bottomHeaderSection>nav>ul>li>ul>li{
+    display: none;
+}
+#bottomHeaderSection>nav>ul>li:hover>ul>li{
+    display: block;
+    padding: 3px 5px;
+}
+#bottomHeaderSection>nav>ul>li:hover>ul{
+    background: #E79800;
+    color: azure;
+    position: absolute;
+    padding: 5px 9.5px;
+    margin-left: -5px;
+    transition: none;
+    z-index: 99;
+}
+#bottomHeaderSection>nav>ul>li:hover>ul>li:hover{
+    background: rgba(78,50,90,0.8);
+}
+
+#logo{
+    background: url('../assets/images/logo.jpeg');
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 20px 0 20px 100px;
+    float: left;
+}
+#logoText{
+    margin: 1.15em 2%;
+    float:left;
+    font-size: 2em;
+    font-family: myCustomFont;
+}
+#bottomHeaderSection a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#carouselContainer{
+    width: 100%;
+    overflow: hidden;
+}
+#carouselImage{
+    position: absolute;
+    z-index: -1;
+    background-image: url(../assets/carouselImages/carousel1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+}
+#carouselContainer>div:nth-child(2){
+    background-color: rgba(00,00,33,0.60);
+    color: #FFF;
+    width: 100%;
+    height: 450px;
+}
+#carouselContainer>div:nth-child(2) aside{
+    background: rgba(00,00,33,0.45);
+    width: 10%;
+    height: 270px;
+    padding-top: 180px;
+    cursor: pointer;
+}
+#carouselContainer>div:nth-child(2) aside:hover{
+    background: rgba(200,210,180,0.5);
+}
+#carouselContainer>div:nth-child(2) article{
+    padding: 50px 10%;
+    width: 60%;
+    text-align: right;
+}
+
+/* ----------- GLOBAL Stuffs ----------- */
+h1{
+    font-size: 2.5em;
+    font-family: 'times new roman';
+    font-weight: bold;
+}
+
+.floatLeft{
+    float:left;
+}
+
+.floatRight{
+    float:right;
+}
+.clearBoth{
+    clear: both;
+}
+.smallFonts{    
+    font-size:0.85em; 
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.textColor1{
+    color: #E79800;
+}
+.textColor2{
+    color: #660033;
+}
+@font-face {
+    font-family: myCustomFont;
+    src: url(../assets/fonts/roboticFont/SFTransRobotics.ttf);
+}
+@font-face {
+    font-family: navFont;
+    src: url(../assets/fonts/navFont/PurplePurse-Regular.ttf);
+}

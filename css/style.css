@@ -1,14 +1,10 @@
-body{
-    background: #FFFFCC;
-}
-
 header{
     overflow: hidden;
 }
 
 #topHeaderSection{
     background: #E79800;
-    color: #FFF;    
+    color: #FFF;
     padding:10px 7%;
 }
 #topHeaderSection div:nth-child(1) div:nth-child(1){
@@ -103,11 +99,14 @@ header{
 #carouselImage{
     position: absolute;
     z-index: -1;
-    background-image: url(../assets/carouselImages/carousel1.jpg);
+    /* background-image: url(../assets/carouselImages/carousel1.jpg);                 Provided in script */
     background-size: 100% 100%;
     width: 100%;
     height: 450px;
     background-repeat: no-repeat;
+}
+#carouselContent{
+    position: absolute;
 }
 #carouselContainer>div:nth-child(2){
     background-color: rgba(00,00,33,0.60);
@@ -131,13 +130,85 @@ header{
     text-align: right;
 }
 
+#ourInventions{
+    /*margin-top: 25px;*/
+    padding: 25px 7%;
+    overflow: hidden;
+    color: #00004D;
+}
+#ourInventions nav div{
+    position: relative;
+    float: left;
+    background: #FFFFEE;
+    /*text-align: right;*/
+    width: 27%;
+    height: 90px;
+    padding: 2%;
+    cursor: pointer;
+}
+#ourInventions nav div:nth-child(1){
+    margin: 10px 0;
+    border-left: 3px solid #C90;
+}
+#ourInventions nav div:nth-child(2){
+    margin: 10px 2%;
+    border-left: 3px solid #42E;
+}
+#ourInventions nav div:nth-child(3){
+    margin: 10px 0;
+    border-left: 3px solid #EA5;
+}
+#ourInventions aside{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    float: right;
+    opacity: 0.95;
+    display: none;
+    overflow: hidden;
+}
+#ourInventions aside article{
+    width: 350px;
+    margin: 10px;
+    height: 98%;
+    background: inherit;
+    border: none;
+}
+#ourInventions nav div:nth-child(1) aside{
+    background: #C90;
+}
+#ourInventions nav div:nth-child(2) aside{
+    background: #42E;
+}
+#ourInventions nav div:nth-child(3) aside{
+    background: #EA5;
+}
+#ourInventions p{
+    margin: 10px 20px;
+    background: none;
+}
+
+
 /* ----------- GLOBAL Stuffs ----------- */
+body{
+    background: #FFFFCC;
+}
 h1{
     font-size: 2.5em;
     font-family: 'times new roman';
     font-weight: bold;
 }
-
+h2{
+    font-size: 1.75em;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.3em;
+    margin: 10px 0 20px;
+}
 .floatLeft{
     float:left;
 }

@@ -62,14 +62,10 @@ $(document).ready(function(){
     
     
     $(".inventionBlocks").mouseenter(function(){
-        $(this).children().siblings("aside").animate({
-            width: "toggle"
-        },200);
+        $(this).children().siblings("aside").animate({ width: "toggle" },200);
     });
-    $(".inventionBlocks").children().siblings("aside").mouseleave(function(){
-        $(this).animate({
-            width: "toggle"
-        },300);
+    $(".inventionBlocks").mouseleave(function(){
+        $(this).children().siblings("aside").animate({ width: "toggle" },300);
     });
     
 }); /*-------------------------------------------End of document ready Method---------------------------------------------*/

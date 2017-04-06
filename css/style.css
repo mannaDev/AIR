@@ -95,6 +95,7 @@ header{
 #carouselContainer{
     width: 100%;
     overflow: hidden;
+    /*background: #58E;*/
 }
 #carouselImage{
     position: absolute;
@@ -148,15 +149,15 @@ header{
 }
 #ourInventions nav div:nth-child(1){
     margin: 10px 0;
-    border-left: 3px solid #C90;
+    border-left: 3px solid #0C6;
 }
 #ourInventions nav div:nth-child(2){
     margin: 10px 2%;
-    border-left: 3px solid #42E;
+    border-left: 3px solid #96F;
 }
 #ourInventions nav div:nth-child(3){
     margin: 10px 0;
-    border-left: 3px solid #EA5;
+    border-left: 3px solid #F90;
 }
 #ourInventions aside{
     width: 100%;
@@ -166,25 +167,27 @@ header{
     left: 0;
     z-index: 2;
     float: right;
-    opacity: 0.95;
+    opacity: 0.97;
     display: none;
     overflow: hidden;
+    color: #FFC;
+    font-weight: bold;
 }
 #ourInventions aside article{
     width: 350px;
-    margin: 10px;
+    margin: 25px 10px;
     height: 98%;
     background: inherit;
     border: none;
 }
 #ourInventions nav div:nth-child(1) aside{
-    background: #C90;
+    background: #0C6;
 }
 #ourInventions nav div:nth-child(2) aside{
-    background: #42E;
+    background: #69F;
 }
 #ourInventions nav div:nth-child(3) aside{
-    background: #EA5;
+    background: #F90;
 }
 #ourInventions p{
     margin: 10px 20px;
